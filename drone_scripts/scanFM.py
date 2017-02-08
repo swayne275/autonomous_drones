@@ -12,10 +12,9 @@ PLOT = False
 import sdrClass
 if PLOT:
     import matplotlib.pyplot as plt
+	plt.close('all')
 import numpy as np
 import time
-
-plt.close('all')
 
 np.set_printoptions(precision=4)
 
