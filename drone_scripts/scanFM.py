@@ -12,7 +12,7 @@ PLOT = False
 import sdrClass
 if PLOT:
     import matplotlib.pyplot as plt
-	plt.close('all')
+    plt.close('all')
 import numpy as np
 import time
 
