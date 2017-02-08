@@ -65,4 +65,4 @@ for x in fc_list:
     if SAVE:
         with open(FILENAME, 'a') as f:
             f.write(','.join(map(str, np.round(freqs, NUM_DECIMAL))) + '\n')
-print(time.time() - now)
+print("Scan required " + str(time.time() - now) + " seconds")
