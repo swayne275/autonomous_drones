@@ -29,7 +29,7 @@ FILENAME = "fullRange_2_5mhz.txt"
 NUM_DECIMAL = 3
 SCAN_RES = 1
 
-radio = sdrClass_r1.rxSDR(30, fs, bw, gain)  # radio on RPi
+radio = sdrClass.rxSDR(30, fs, bw, gain)  # radio on RPi
 
 fc_list = np.linspace(fcLow, fcHigh, ((fcHigh - fcLow)/(SCAN_RES*fs) + 1))
 
