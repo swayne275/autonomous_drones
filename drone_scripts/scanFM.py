@@ -7,9 +7,11 @@ Can now smell radio waves. Plots speed improved by 2-3x.
 1/26:    adding ability to print to a file
 '''
 
+PLOT = False
 
 import sdrClass_r1
-import matplotlib.pyplot as plt
+if PLOT:
+    import matplotlib.pyplot as plt
 import numpy as np
 import time
 
@@ -23,7 +25,6 @@ fs = 2.5
 bw = 300
 gain = 'auto'
 NFFT = 1024
-PLOT = False
 SAVE = True
 FILENAME = "fullRange_2_5mhz.txt"
 NUM_DECIMAL = 3
