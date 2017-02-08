@@ -9,7 +9,7 @@ Can now smell radio waves. Plots speed improved by 2-3x.
 
 PLOT = False
 
-import sdrClass_r1
+import sdrClass
 if PLOT:
     import matplotlib.pyplot as plt
 import numpy as np
