@@ -20,7 +20,7 @@ import drone_control
 np.set_printoptions(precision=4)
 
 fcLow = 30
-fcHigh = 1750
+fcHigh = 50
 fs = 2.5
 bw = 300
 gain = 'auto'
