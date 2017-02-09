@@ -1,6 +1,6 @@
 {
-    "mission_name":"good_video_15",
-    "location":"black mountain",
+    "mission_name":"test",
+    "location":"CSE2115",
     "drones": [
         {
             "name": "Alpha",
