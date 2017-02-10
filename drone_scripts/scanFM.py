@@ -16,6 +16,7 @@ if PLOT:
 import numpy as np
 import time
 import drone_control
+import dronekit
 
 np.set_printoptions(precision=4)
 
@@ -31,7 +32,8 @@ NUM_DECIMAL = 3
 SCAN_RES = 1
 
 radio = sdrClass.rxSDR(30, fs, bw, gain)  # radio on RPi
-Pilot = drone_control.Pilot(True, True, True)
+connection_string = "tcp:127.0.0.1:{0}".format(5760 + 10 * 1)
+vehicle = dronekit.connect(connection_string, wait_ready= True)
 
 fc_list = np.linspace(fcLow, fcHigh, ((fcHigh - fcLow)/(SCAN_RES*fs) + 1))
 
